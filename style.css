@@ -1,0 +1,140 @@
+/* KORT1 */
+
+#kort1 {
+    margin: 30px;
+    height: 225px;
+    width: 370px;
+    position: relative;
+
+    background: linear-gradient(
+        270deg,
+        rgba(117, 37, 179, 1) 0%,
+        rgba(162, 87, 199, 1) 50%,
+        rgba(237, 83, 234, 1) 100%
+    );
+    /*   border: 5px solid blue; */
+    border-radius: 15px;
+}
+
+/* FINNS DET ETT BRA SÄTT ATT GÖRA GRADIENT PÅ BORDER? JAG LÖSTE DET GENOM ATT FEJKA EN BORDER MED EN SPEGELVÄND (NÅGOT STÖRRE) KOPIA PÅ MAIN BAKOM MAIN: */
+
+#kort1::before {
+    content: "";
+    position: absolute;
+
+    inset: -5px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(117, 37, 179, 1) 0%,
+        rgba(162, 87, 199, 1) 50%,
+        rgb(187, 63, 185) 100%
+    );
+
+    border-radius: 20px;
+
+    z-index: -1;
+}
+
+.cirkelA {
+    /* BOKSTAVEN A */
+    font-size: 35px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+
+    /* RAM */
+    background-color: rgb(145, 87, 199);
+    color: white;
+    width: 80px;
+    height: 80px;
+    border: 4px solid rgb(214, 169, 236);
+    border-radius: 50%;
+
+    /* POSITION */
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0%, -50%);
+}
+
+/* INFOTEXT */
+
+.textA {
+    position: absolute;
+    top: 45%;
+    left: 130px;
+    transform: translate(0, -50%);
+}
+
+.textA * {
+    font-weight: lighter;
+    margin: 6px 0;
+    letter-spacing: 0.25px;
+}
+
+.rubrik1 {
+    font-size: 25px;
+}
+
+.textA h2 {
+    color: white;
+    font-size: medium;
+}
+
+.textA p {
+    color: rgb(110, 168, 255);
+}
+
+/* ÖVRE HÖGRA HÖRNET */
+
+.invisible {
+    color: white;
+    font-weight: bolder;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: rgb(160, 158, 158);
+}
+
+/* NEDERSTA HÖGRA HÖRNET */
+
+.number1 {
+    color: white;
+    font-weight: bolder;
+
+    background-color: black;
+    border: 1px dashed rgb(110, 168, 255);
+    padding: 5px 10px;
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* ----------- */
+
+/* KORT2 */
+
+#kort2 {
+    box-sizing: border-box;
+    margin: 30px;
+    height: 230px;
+    width: 375px;
+    position: relative;
+
+    border: 5px solid rgba(117, 37, 179, 1);
+    border-radius: 15px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(115, 115, 115, 1) 0%,
+        rgba(51, 51, 51, 1) 50%,
+        rgba(0, 0, 0, 1) 100%
+    );
+}
