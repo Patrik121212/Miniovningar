@@ -1,0 +1,124 @@
+.board {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(6, 40px);
+    grid-template-rows: repeat(6, 40px);
+    grid-template-areas:
+        ".  .   o1  o2  .    ."
+        "i1 .   o3  o4  .    l1"
+        "i2 .   z3  z4   .   l2"
+        "i3 z1  z2   .   l4  l3"
+        "i4 .   t1  t2  t3  ."
+        ".  .   .   t4  .   .";
+    gap: 1px;
+    padding: 12px;
+    width: max-content;
+    background-color: lavender;
+}
+
+.block {
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+    box-shadow: 2px 2px 5px 1px;
+}
+
+
+.i {
+    background: royalblue;
+}
+.o {
+    background: darkgoldenrod;
+}
+.t {
+    background: violet;
+}
+.l {
+    background: seagreen;
+}
+.z {
+    background: yellowgreen;
+}
+
+
+#i1 {
+    grid-area: i1;
+}
+
+#i2 {
+    grid-area: i2;
+}
+
+#i3 {
+    grid-area: i3;
+}
+
+#i4 {
+    grid-area: i4;
+}
+
+#o1 {
+    grid-area: o1;
+}
+
+#o2 {
+    grid-area: o2;
+}
+
+#o3 {
+    grid-area: o3;
+}
+
+#o4 {
+    grid-area: o4;
+}
+
+#t1 {
+    grid-area: t1;
+}
+
+#t2 {
+    grid-area: t2;
+}
+
+#t3 {
+    grid-area: t3;
+}
+
+#t4 {
+    grid-area: t4;
+}
+
+#l1 {
+    grid-area: l1;
+}
+
+#l2 {
+    grid-area: l2;
+}
+
+#l3 {
+    grid-area: l3;
+}
+
+#l4 {
+    grid-area: l4;
+}
+
+#z1{
+    grid-area: z1;
+}
+
+#z2{
+    grid-area: z2;
+}
+
+#z3{
+    grid-area: z3;
+}
+
+#z4{
+    grid-area: z4;
+}
